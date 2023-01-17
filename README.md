@@ -13,3 +13,6 @@ specific fields of math covered so far are:
 
 As time goes on I plan to update each chapter with relevant formulas and topics,
 often with examples. 
+
+I recommend downloading the current main.pdf as the table of contents is 
+interactive. As you click on a section or chapter, it will take you there.
