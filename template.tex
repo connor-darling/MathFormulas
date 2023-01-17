@@ -1,0 +1,120 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Math 3B}\\Take Home Quizzes}
+\author{\huge{Connor Darling}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\setcounter{chapter}{2}
+\chapter{Techniques of Integration}
+\setcounter{section}{1}
+\section{Trignometric Integrals}
+\section{Trignometric Substitution}
+\section{Partial Fractions}
+\setcounter{section}{5}
+\section{Numerical Integration}
+\section{Improper Integrals}
+
+\chapter{Introduction to Differential Equations}
+\setcounter{section}{2}
+\section{Seperable Differential Equations}
+
+\chapter{Sequences and Series}
+
+
+\section{Quiz 8 - Sequences}
+\newpage
+
+\qs{}{Find a formula for $a_n$, the general term of the following sequence, assuming the
+initial index is 1 and the pattern suggested by the first few terms continues.
+
+  \begin{equation*}
+    \left\{
+      \frac{4}{9}, \frac{-6}{27}, \frac{8}{81}, \frac{-10}{243}, \dots
+    \right\}
+  \end{equation*}
+}
+
+\pf{Answer to question 1}{
+  \begin{equation*}
+    \left\{ a_n \right\} = 
+    \left\{
+      \frac{4}{9}, \frac{-6}{27}, \frac{8}{81}, \frac{-10}{243}, \dots
+    \right\} =
+    \left\{
+      \frac{2(n+1)(-1)^{(n+1)}}{3^{(n+1)}}
+    \right\} 
+  \end{equation*}
+
+  The denominator increase by multiple of $\frac{1}{3}$ each time which is the same as 
+  an incrementing power $3^{n}$, but since the sequence begins with a denominator 9
+  we need to raise 3 to a power which will be the starting index plus one:
+  $3^{(n+1)}$ to begin our sequence at 9. \\
+
+   As for the numerator, each succeeding element
+  in the list varies from positive, negative, positive, negative, \dots and so on. 
+  This tells us 
+  that we are going to need to multiply by a negative one each time that is raised to 
+  an even integer to get a positive number, and an odd integer to get a negative number
+}
+
+\qs{}{Find the limit of the following sequence.
+  \begin{equation*}
+    \left\{
+      \frac{e^{-n}}{\sin \left( \frac{1}{n} \right)}
+    \right\}
+  \end{equation*}
+}
+
+\pf{Answer to question 2}{
+  \begin{equation*}
+    \left\{
+      \frac{e^{-n}}{\sin \left( \frac{1}{n} \right)}
+    \right\} \\
+
+  \end{equation*}
+
+  \begin{equation*}
+  \lim_{n\to\infty} \left( \frac{e^{-n}}{\sin \left (\frac{1}{n} \right)} \right)
+  \end{equation*} \\
+
+  By Squeeze Theorem:
+
+  \begin{equation*}
+    \frac{e^{-n}}{-1} \leqq \frac{e^{-n}}{\sin \left(\frac{1}{n} \right)} \leqq \frac{e^{-n}}{-1}
+  \end{equation*} \\
+
+  \begin{equation*}
+  \lim_{n\to\infty} \abs[\Big]{\frac{e^{-n}}{-1}} = 0 \;\;\;\;and\;\;\;\; \lim_{n\to\infty} \abs[\Big]{\frac{e^{-n}}{1}} = 0
+  \end{equation*} \\
+
+  \begin{equation*}
+    \therefore \; \lim_{n\to\infty} \left( \frac{e^{-n}}{\sin \left (\frac{1}{n} \right)} \right) = 0
+  \end{equation*} \\
+
+}
+
+
+\newpage
+\qs{}{Determine whether the following sequence is (eventually) increasing, decreasing,
+  or neither. If the behavior is only true eventually, be sure to state this.
+  \begin{equation*}
+    \left\{
+      \frac{n!}{2^n}
+    \right\}
+  \end{equation*}
+} % END OF SECTION 
+
+\end{document}

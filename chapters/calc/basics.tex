@@ -1,0 +1,429 @@
+\chapter{Calculus I}
+
+\noindent This chapter will embody most of calculus I topics, excluding 
+basic integration which will be saved for the following chapter calculus II
+
+% !
+\section{Definition of the Limit}
+\noindent \textbf{Limit}\\
+The limit of a function is the value the function approaches at a given value of
+$x$, regardless of whether the function actually reaches that value.
+
+\begin{framed}
+  \noindent \textbf{Example:} Limit
+  \begin{equation*}
+    \lim_{x \to 2} \frac{x^2 - 4}{x - 2}
+  \end{equation*}
+  \noindent This represents the limit of the function $(x^2 - 4)/(x - 2)$ as $x$ 
+            approaches 2.
+\end{framed}
+
+\noindent \textbf{One-sided limits}\\
+The one-sided limits are the left- and right-hand limits. The left-hand limit is 
+the limit of the function as we approach from the left side (or negative side), 
+whereas the right-hand limit is the limit of the function as we approach from 
+the right side (or positive side).
+
+\begin{framed}
+  \noindent \textbf{Example:} One Sided Limit
+  \begin{equation*}
+    \lim_{x \to 0^+} \frac{1}{x}
+  \end{equation*}
+  \noindent This represents the limit of the function $1/x$ as $x$ approaches 0 
+  from the right (or positive direction).\\\\ 
+
+  \noindent \textbf{Another Example:} One Sided Limit
+  \begin{equation*}
+    \lim_{x \to 0^-} \frac{1}{x}
+  \end{equation*}
+  \noindent This represents the limit of the function $1/x$ as $x$ approaches 0 
+  from the left (or negative direction).
+\end{framed}
+
+\noindent \textbf{General Limit}\\
+The general limit exists at a point $x=c$ if
+\begin{enumerate}
+  \item the left-hand limit exists at $x=c$,
+  \item the right-hand limit exists at $x=c$, and
+  \item those left and right-hand limits are equal to one another.\\
+\end{enumerate}
+
+\noindent The general limit does not exist (DNE) at $x = c$ if
+\begin{enumerate}
+  \item the left-hand limit does not exist at $x=c$, and/or
+  \item the right-hand limit does not exist at $x=c$, and/or
+  \item the left- and right-hand limits both exist, but aren't equal to one 
+        another.
+\end{enumerate}
+
+
+% !
+\section{Continuity}
+\noindent \textbf{Continuity}\\
+If we can draw the graph of the function without ever lifting our pencil off the
+paper as we sketch it out from left to right, then the function is continuous 
+everywhere. At any point where we have to lift our pencil off the paper in order
+to continue sketching it, there must be a discontinuity at that point.\\\\
+
+\noindent \textbf{Point (removable) discontinuity}\\
+A point discontinuity exists wherever there's a hole in the graph at one 
+specific point. These are also called “removable discontinuities” because we can
+“remove” the discontinuity redefining the function at that particular point. 
+Point discontinuities exist when a factor in rational functions when a factor 
+that would have made the denominator 0 is cancelled from the function. The 
+general limit always exists at a point discontinuity.\\\\
+
+\noindent \textbf{Jump discontinuity}\\
+A jump discontinuity exists wherever there's a big break in the graph that isn't 
+caused by an asymptote. Jump discontinuities usually occur in piecewise-defined 
+functions. The general limit never exists at a jump discontinuity.\\\\
+
+\noindent \textbf{Infinite (essential) discontinuity}\\
+An infinite discontinuity is the kind of discontinuity that occurs at an 
+asymptote. Infinite discontinuities exist in rational functions in factors that 
+make the denominator equal to 0 and can't be cancelled from the denominator.\\\\
+
+\noindent \textbf{Endpoint discontinuity}\\
+Endpoint discontinuities exist at $a$ and $b$ when a function is defined over a 
+particular interval $[a, b]$. The general limit never exists at an endpoint 
+discontinuity.\\\\
+
+
+% !
+\section{Solving Limits}
+
+\noindent \textbf{Process for solving limits}\\
+Try direct substitution first, then factoring, then conjugate method.\\\\
+
+\noindent \textbf{Conjugate}\\
+The conjugate of an expression is an expression with the same two terms, but 
+with the opposite sign between the terms.\\\\
+
+\noindent \textbf{Limits at infinity}\\
+The limit at infinity is the limit of the function as we approach $\infty$ or 
+$-\infty$.\\\\
+
+\noindent \textbf{Infinite Limits}\\
+A limit is infinite when the value of the limit is $\infty$ or $-\infty$ as we 
+approach a particular point.\\\\
+
+\noindent \textbf{Degree in a Rational Function}\\
+The degree of the numerator or denominator is the exponent on the term with the 
+largest exponent.
+\begin{itemize}
+  \item $N<D$: If the degree of the numerator is less than the degree of the 
+               denominator, then the horizontal asymptote is given by $y=0$.
+  \item $N>D$: If the degree of the numerator is greater than the degree of the 
+               denominator, then the function doesn't have a horizontal 
+               asymptote.
+  \item $N=D$: If the degree of the numerator is equal to the degree of the 
+               denominator, then the horizontal asymptote is given by the ratio 
+               of the coefficients on the highest-degree terms.\\\\
+\end{itemize}
+
+
+% !
+\section{Trignometric Limits}
+
+Limit problems with trigonometric functions usually revolve around three key 
+limit values.
+
+\begin{equation*}
+  \lim_{x \to 0} \frac{\sin x}{x} = 1
+\end{equation*}
+
+\begin{equation*}
+  \lim_{x \to 0} \cos x = 1
+\end{equation*}
+
+\begin{equation*}
+  \lim_{x \to 0} \sin x = 0
+\end{equation*}
+
+
+% !  
+\section{Squeeze Theorem}
+The Squeeze Theorem allows us to find the limit of a function at a particular 
+point, even when the function is undefined at that point. The way that we do it 
+is by showing that our function can be “squeezed” between two other functions at 
+the given point, and proving that the limits of these other functions are equal.
+
+
+% !
+\section{Definition of the Derivative}
+
+\noindent \textbf{Secant Line, Average Rate of Change}\\
+A secant line is a line that runs right through the graph, crossing it at a 
+point. The slope of the secant line is the average rate of change of the 
+function over the points $(x, f(x))$ and $(x+h,f(x+h))$ at which the secant line
+intersects the function.\\
+\begin{equation*}
+  m = \frac{f(x+h)-f(x)}{h}
+\end{equation*}
+
+\noindent \\\\\\\textbf{Tangent Line, Instantaneous Rate of Change, Difference 
+                  Quotient}\\
+A tangent line is a line that just barely touches the edge of a graph, 
+intersecting it at exactly one specific point. The line doesn't cross the graph, 
+it skims along the graph and stays along the same side of the graph. The slope 
+of the tangent line is the instantaneous rate of change of the function at the 
+point at which the tangent line intersects the function.\\
+\begin{equation*}
+  f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+\end{equation*}
+
+
+% !
+\section{Derivative Power Rules}
+
+\begin{framed}
+\noindent \textbf{Power Rule}\\
+The power rule lets us take the derivative of power functions.
+  \begin{equation*}
+    (a \cdot n)x^{n - 1}
+  \end{equation*}
+\end{framed}
+
+\begin{framed}
+\noindent \textbf{Derivative of a Constant}\\
+The derivative of a constant is 0\\
+Given the a constant $y = 5$ for example:
+  \begin{equation*}
+    y = 5
+  \end{equation*}
+  \centerline{Since five is a constant it can be seen as:}
+  \begin{equation*}
+    y = 5x^0
+  \end{equation*}
+  \centerline{So when you use the power rule on it:}
+  \begin{equation*}
+    y' = (5 \cdot 0)x^{0-1}
+  \end{equation*}
+  \centerline{And of course anything times 0 is 0}
+  \begin{equation*}
+    y' = 0
+  \end{equation*}
+  \centerline{Thus, the derivative of a constant is 0}
+\end{framed}
+
+\begin{framed}
+\noindent \textbf{Power Rule for Negative Powers}\\
+When you need to take the derivative of a negative power, you can use a simple
+rearrangement of terms, to make using the power rule easier.
+  \begin{equation*}
+    x^{-a}= \frac{1}{x^a}
+  \end{equation*}
+  \centerline{or}
+  \begin{equation*}
+    \frac{1}{x^{-a}} = x^a
+  \end{equation*}
+\end{framed}
+
+\begin{framed}
+\noindent \textbf{Power Rule for Fractional Powers}\\
+If you need to take the derivative of the function involving a root, you can 
+use a simple rearrangement of terms, to make using the power rule easier.
+  \begin{equation*}
+    \sqrt[b]{x^a} = x^{\frac{a}{b}}
+  \end{equation*}
+\end{framed}
+
+
+% !
+\section{Product Rule}
+\noindent For $y = f(x)g(x)$, the derivative is
+\begin{equation*}
+  y' = f'(x)g(x) + g'(x)f(x)
+\end{equation*}
+
+\noindent \\\\For $y = f(x)g(x)h(x)$, the derivative is
+\begin{equation*}
+  y' = f'(x)g(x)h(x) + g'(x)f(x)h(x) + f(x)g(x)h'(x)
+\end{equation*}
+
+
+% !
+\section{Quotient Rule}
+\noindent For $y = \frac{f(x)}{g(x)}$, the derivative is:\\
+
+\begin{equation*}
+  y' = \frac{f'(x)g(x)-g'(x)f(x)}{[g(x)]^2}
+\end{equation*}
+
+
+% !
+\section{Reciprocal Rule}
+\noindent For $y = \frac{a}{g(x)}$, the derivative is:\\
+
+\begin{equation*}
+  y' = \frac{-ag'(x)}{[g(x)]^2}
+\end{equation*}
+
+
+% !
+\section{Derivatives of the Six Trig Functions}
+
+  \begin{center}
+    \begin{tabular}{ |c|l| } 
+     \hline
+     \textbf{Trigonometric Function} & \textbf{Derivative} \\ 
+     \hline
+     $\sin(x)$ & $\cos(x)$ \\ 
+     \hline
+     $\cos(x)$ & $-\sin(x)$ \\ 
+     \hline
+     $\tan(x)$ & $\sec^2(x)$ \\ 
+     \hline
+     $\sec(x)$ & $\sec(x)\tan(x)$ \\ 
+     \hline
+     $\csc(x)$ & $-\csc(x)\cot(x)$ \\ 
+     \hline
+     $\cot(x)$ & $-\csc^2(x)$ \\ 
+     \hline
+    \end{tabular}
+    \end{center}
+
+
+% !
+\section{Derivative of Exponential Functions}
+\noindent First note that the constant $e \approx 2.718281828459045...$\\\\
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+  \hline
+  \textbf{Functions} & \textbf{Derivative} & \textbf{Derivative with g(x) argument} \\
+  \hline
+  $y = e^x$ & $y'=e^x$ & $y' = e^{g(x)}g'(x)$ \\
+  \hline
+  $y = a^x$ & $y'=a^x(\ln a)$ & $y'=a^{g(x)}(\ln a)g'(x)$\\
+  \hline
+\end{tabular}
+\end{center}
+
+
+% !
+\section{Derivative of Logarithmic Functions}
+\noindent First note that the $\ln a$ is the natural logarithm, evaluated at $a$
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+  \hline
+  \textbf{Functions} & \textbf{Derivative} & \textbf{Derivative with g(x) argument} \\
+  \hline
+  $y = \log_ax$ & $y'= \frac{1}{x \ln a}$ & $y' = \frac{1}{g(x)\ln a} g'(x)$ \\
+  \hline
+  $y = \ln x$ & $y'= \frac{1}{x}$ & $y'= \frac{1}{g(x)} g'(x)$\\
+  \hline
+\end{tabular}
+\end{center}
+
+
+% !
+\section{The Chain Rule}
+
+The chain rule is a fundamental concept in calculus that allows us to find the derivative of a composite function. It states that if $y = f(u)$ and $u = g(x)$, then the derivative of $y$ with respect to $x$ is given by:
+
+\begin{equation}
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+\end{equation}
+
+This can be written more compactly as $dy/dx = dy/du \cdot du/dx$.
+
+The chain rule is extremely useful in solving problems involving composite functions. For example, consider the function $y = (3x^2 + 4x)^5$. To find the derivative of this function, we can first find the derivative of the inner function $u = 3x^2 + 4x$:
+
+\begin{align*}
+\frac{du}{dx} &= 6x + 4 \\
+\Rightarrow dy/du &= (3x^2 + 4x)^4 \\
+\end{align*}
+
+Next, we can use the chain rule to find the derivative of the outer function $y$ with respect to $x$:
+
+\begin{align*}
+  \frac{dy}{dx} &= \frac{dy}{du} \cdot \frac{du}{dx} \\
+  &= 5(3x^2 + 4x)^4 \cdot (6x + 4) \\
+  &= 5(3x^2 + 4x)^4(6x + 4)
+  \end{align*}
+  
+  We can also use chain rule to find the derivative of multi variable function, for example 
+  
+  $F(x,y) = x^2*sin(y)$, if we want to find $\frac{\partial F}{\partial x}$
+  
+  \begin{align*}
+  \frac{\partial F}{\partial x} &= \frac{\partial F}{\partial x}\frac{\partial x}{\partial x} + \frac{\partial F}{\partial y}\frac{\partial y}{\partial x}\\
+  &= 2x*sin(y)
+  \end{align*}
+  
+  In summary, the chain rule is a powerful tool that allows us to find the derivative of composite functions by breaking them down into simpler parts. It is essential for solving many types of problems in calculus.
+
+
+% !
+\section{Derivatives of Inverse Trig Functions}
+\begin{center}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Function} & \textbf{Derivative} & \textbf{With g(x) argument} \\
+    \hline
+    $\arcsin{x}$ & $\frac{1}{\sqrt{1-x^2}}$ & $\frac{d}{dx}(\arcsin{g(x)}) = \frac{g'(x)}{\sqrt{1-g(x)^2}}$ \\
+    \hline
+    $\arccos{x}$ & $-\frac{1}{\sqrt{1-x^2}}$ & $\frac{d}{dx}(\arccos{g(x)}) = -\frac{g'(x)}{\sqrt{1-g(x)^2}}$ \\
+    \hline
+    $\arctan{x}$ & $\frac{1}{1+x^2}$ & $\frac{d}{dx}(\arctan{g(x)}) = \frac{g'(x)}{1+g(x)^2}$ \\
+    \hline
+    $\operatorname{arcsec}{x}$ & $\frac{1}{|x|\sqrt{x^2-1}}$ & $\frac{d}{dx}(\operatorname{arcsec}{g(x)}) = \frac{g'(x)}{|g(x)|\sqrt{g(x)^2-1}}$ \\
+    \hline
+    $\operatorname{arccsc}{x}$ & $-\frac{1}{|x|\sqrt{x^2-1}}$ & $\frac{d}{dx}(\operatorname{arccsc}{g(x)}) = -\frac{g'(x)}{|g(x)|\sqrt{g(x)^2-1}}$ \\
+    \hline
+    $\operatorname{arccot}{x}$ & $-\frac{1}{1+x^2}$ & $\frac{d}{dx}(\operatorname{arccot}{g(x)}) = -\frac{g'(x)}{1+g(x)^2}$ \\
+    \hline
+    \end{tabular}
+\end{center}
+
+
+% !
+\section{Average Rate of Change}
+\begin{equation*}
+  \frac{\Delta f}{\Delta x} = \frac{f(x_2)-f(x_1)}{x_2-x_1}
+\end{equation*}
+
+
+% !
+\section{Implicit Differentiation}
+
+Implicit differentiation is a method of finding the derivative of an implicit function, which is a function that is defined implicitly rather than explicitly. In other words, the dependent variable is not isolated on one side of the equation. 
+
+Given an implicit function $F(x,y) = 0$, the derivative of $y$ with respect to $x$ can be found by taking the derivative of both sides of the equation with respect to $x$, and then solving for $\frac{dy}{dx}$. The process is summarized by the following formula:
+
+$$\frac{dy}{dx} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}$$
+
+Where $\frac{\partial F}{\partial x}$ and $\frac{\partial F}{\partial y}$ are the partial derivatives of $F$ with respect to $x$ and $y$, respectively.
+
+For example, consider the implicit function $x^2 + y^2 = 16$. To find $\frac{dy}{dx}$, we take the derivative of both sides with respect to $x$:
+
+$$\frac{d}{dx}(x^2 + y^2) = \frac{d}{dx}(16)$$
+
+$$2x + \frac{dy}{dx} \cdot 2y = 0$$
+
+Solving for $\frac{dy}{dx}$ gives us:
+
+$$\frac{dy}{dx} = -\frac{2x}{2y} = -\frac{x}{y}$$
+
+Another example is the implicit function $x^3 + y^3 = 3xy$,
+
+$$\frac{dy}{dx} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}} = -\frac{3x^2 - 3y^2}{3y^2 - 3x^2}$$
+
+
+% !
+\section{Higher Order Derivatives}
+\begin{table}[h]
+  \centering
+  \renewcommand{\arraystretch}{1.7}
+  \begin{tabular}{p{5cm}p{3cm}p{3cm}}
+  \toprule
+  \textbf{Higher Order Derivative} & \textbf{Form} & \textbf{Notation} \\ \hline
+  First Derivative & $y'$ & $f'(x)$ or $\frac{dy}{dx}$ \\ 
+  \hline
+  Second Derivative & $y''$ & $f''(x)$ or $\frac{d^2y}{dx^2}$ \\ 
+  \hline
+  Third Derivative & $y'''$ & $f'''(x)$ or $\frac{d^3y}{dx^3}$ \\ \bottomrule
+  \end{tabular}
+  \end{table}

@@ -1,0 +1,35 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge Important Math Concepts\\
+{\huge Algebra, Trigonometry, Pre-Calculus, Calculus, and More to Come}}
+\author{\Large Connor Darling, Carlos Aguilera}
+\date{Janurary 13, 2022}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+
+\include{chapters/algebra/basics} 
+% \include{chapters/geometry/basics}
+\include{chapters/trig/basics} 
+% \include{chapters/precal/basics} 
+\include{chapters/calc/basics} 
+\include{chapters/calcII/basics} 
+
+% \chapter{Calculus III}
+% \include{chapters/calc} 
+
+
+
+
+\end{document}

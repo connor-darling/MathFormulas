@@ -1,0 +1,361 @@
+\chapter{Calculus II}
+
+% !
+\section{Derivatives and Integral Formulas Relevant to Calculus II}
+
+\begin{table}[h]
+  \centering
+  \renewcommand{\arraystretch}{2}
+  \begin{tabular}{p{5cm}p{7cm}}
+  \toprule
+  \textbf{Differentiation Formula} & \textbf{Corresponding Integration Formula}\\ \hline
+  $\frac{d}{dx}x^n = nx^{n-1}$ & $\int \, x^n \, dx = \frac{x^{n+1}}{n+1} + C, n \neq -1$ \\ 
+  \hline
+  $\frac{d}{dx} \ln x = \frac{1}{x}$ & $\int \, \frac{1}{x} \, dx = \ln |x| + C$\\
+  \hline
+  $\frac{d}{dx} e^x = e^x$ & $\int \, e^x \, dx = e^x + C$\\
+  \hline
+  $\frac{d}{dx} a^x = (\ln a)a^x$ & $\int \, a^x \, dx = \left(\frac{1}{\ln a}\right)a^x + C$\\
+  \hline
+  $\frac{d}{dx} \sin x = \cos x$ & $\int \, \cos x \, dx = \sin x + C$\\
+  \hline
+  $\frac{d}{dx} \cos x = -\sin x$ & $\int \, \sin x \, dx = -\cos x + C$\\
+  \hline
+  $\frac{d}{dx} \tan x = \sec^2 x$ & $\int \, \sec^2x \, dx = \tan x + C$\\
+  \hline
+  $\frac{d}{dx} \cot x = -\csc^2 x$ & $\int \, \csc^2x \, dx = -\cot x + C$\\
+  \hline
+  $\frac{d}{dx} \sec x = \sec x \tan x$ & $\int \, \sec x \tan x \, dx = \sec x + C$\\
+  \hline
+  $\frac{d}{dx} \csc x = -\csc x \cot x$ & $\int \, \csc x \cot x \, dx = -\csc x + C$\\
+  \hline
+  $\frac{d}{dx} \arcsin x = \frac{1}{\sqrt{1-x^2}}$ & $\int \, \frac{1}{\sqrt{1-x^2}} \, dx = \arcsin x + C$\\
+  \hline
+  $\frac{d}{dx} \arccos x = -\frac{1}{\sqrt{1-x^2}}$ & $\int \, -\frac{1}{\sqrt{1-x^2}} \, dx = \arccos x + C$\\
+  \hline
+  $\frac{d}{dx} \arctan x = \frac{1}{1+x^2}$ & $\int \, \frac{1}{1+x^2} \, dx = \arctan x + C$\\
+  \hline
+  $\frac{d}{dx} \operatorname{arcsec} x = \frac{1}{|x|\sqrt{x^2-1}}$ & $\int \, \frac{1}{|x|\sqrt{x^2-1}} \, dx = \operatorname{arcsec} |x| + C$\\ \bottomrule
+  \end{tabular}
+  \end{table}
+
+
+% !
+\section{Anti-Derivatives}
+
+Anti-derivatives, also known as indefinite integrals, are the reverse operation 
+of finding the derivative of a function. Given a function $f(x)$, an 
+anti-derivative of $f(x)$ is a function $F(x)$ such that $F'(x) = f(x)$. The 
+symbol for anti-derivative is $\int$. 
+
+Anti-derivatives are used in many areas of mathematics, physics, and engineering 
+to find the total amount of some quantity over an interval. For example, 
+in physics, anti-derivatives can be used to find the distance traveled by an 
+object given its velocity function. In economics, anti-derivatives can be used 
+to find the total cost of producing a certain quantity of goods given the cost 
+function.
+
+The process of finding an anti-derivative of a function is called integration. 
+There are several techniques for finding anti-derivatives, including integration by substitution, integration by parts, and using integration tables. It's important to note that for most functions, there is no closed-form solution for the antiderivative, in those cases numerical integration is used.
+
+Here are some examples of finding anti-derivatives:
+
+1. The anti-derivative of $x^2$ is $\frac{x^3}{3} + C$ , where C is an arbitrary constant.\\
+
+2. The anti-derivative of $2x$ is $x^2 + C$ \\
+
+3. The anti-derivative of $e^x$ is $e^x + C$
+
+
+% !
+\section{Limit of Riemann Sums and Definite Integrals}
+
+\noindent \textbf{Riemann Sum:} A Riemann sum is a sum of the form:
+\begin{equation*}
+    \sum_{i=1}^{n} f(x_i) \Delta x
+\end{equation*}
+A Riemann sum is a sum of areas of $n$ rectangles with width $\Delta x$ and a
+height $f(x_i)$. A Riemann sum can be used to approximate the area under the 
+graph of a function $f(x)$.\\\\
+
+\noindent \textbf{Definite Integral:} The definite integral $\int_a^b f(x)dx$ is
+the exact area under the graph of a function $f(x)$ on the interval $[a, b]$.
+The definite integral can be found by taking a limit of a Riemann sum as the 
+number of rectangles used approaches infinity. That is,
+
+\begin{equation*}
+  \int_a^b f(x)dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x
+\end{equation*}
+
+\noindent \textbf{Steps to Rewriting the Limit of a Riemann Sum as a Definite 
+                  Integral:} 
+\begin{enumerate}
+  \item  Determine the value of $\Delta x$. Remember that $ \int_a^b f(x)dx = 
+        \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x.$
+  \item  Choose a lower bound $a=0$ and determine the upper bound $b$ using the 
+         fact that $\Delta x = \frac{b-a}{n}$
+  \item Determine the function $f(x)$ by replacing the $x_i = i \Delta x$ with 
+        an $x$.
+  \item Use the gathered information to write the definite integral 
+        $\int_a^b f(x)dx$.
+\end{enumerate}
+
+\begin{framed}
+  \noindent \textbf{Example:}
+  Rewrite the limit of the Riemann sum as a definite integral. 
+  \begin{equation*}
+    \sum_{i=1}^{n} \left(5 + \frac{3i}{n}\right)^5 \cdot \frac{3}{n}
+  \end{equation*}
+  1. Determine the value of $\Delta x$. Remember that $ \int_a^b f(x)dx = 
+        \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x.$\\\\
+  $\Delta x$ is written outside of the paraentheses in the Riemann Sum. We have:
+  \begin{equation*}
+    \Delta x = \frac{3}{n}
+  \end{equation*}
+
+  \noindent \\2. Choose a lower bound $a=0$ and determine the upper bound $b$ 
+  using the fact that $\Delta x = \frac{b-a}{n}$\\\\
+
+  Using $a = 0$ and $\Delta x = \frac{b - a}{n}$, we have:
+  \begin{equation*}
+    \Delta x = \frac{b - a}{n}
+  \end{equation*}
+
+  \begin{equation*}
+    \frac{3}{n} = \frac{b - 0}{n}
+  \end{equation*}
+
+  \begin{equation*}
+    \frac{3}{n} = \frac{b}{n}
+  \end{equation*}
+
+  \begin{equation*}
+    3 = b
+  \end{equation*}
+
+  \noindent So we have the bounds of integration $a = 0$ and $b = 3$.\\\\
+  3. Determine the function $f(x)$ by replacing the $x_i = i \Delta x$ with 
+  an $x$.\\
+
+  \noindent In the Riemann sum, we have $f(x_i)=\left(5+\frac{3i}{n}\right)^5$.\\\\
+  \noindent Since $\Delta x = \frac{3}{n}$, we know that $x_i=i\Delta x 
+  = \frac{3i}{n}$. Therefore:
+
+  \begin{equation*}
+    f(x_i) = \left(5+\frac{3i}{n}\right)^5
+  \end{equation*}
+
+  \begin{equation*}
+    f(x_i) = (5+x_i)^5
+  \end{equation*}
+
+  \begin{equation*}
+    f(x_i) = (5+x)^5
+  \end{equation*}
+
+  4. item Use the gathered information to write the definite integral 
+        $\int_a^b f(x)dx$.\\\\
+  Using $a = 0, b = 3$ and $f(x) = (5+x)^5$, we have:\\
+  \begin{equation*}
+    \lim_{n \to \infty} \sum_{i=i}^{n} \left(5+\frac{3i}{n}\right)^5\cdot 
+    \frac{3}{n} = \int_0^3 (5+x)^5 dx
+  \end{equation*}
+\end{framed}
+
+
+% !
+\section{U-Substitution with Examples}
+u-substitution is a method for evaluating definite and indefinite integrals. 
+The basic idea is to make a substitution of the variable of integration in order 
+to make the integral easier to evaluate.\\\\
+\textbf{3 Clues we need for u-sub}
+\begin{enumerate}
+  \item Product of 2 Functions
+  \item One factor is a composition
+  \item The other factor is the derivative of the inside factor
+\end{enumerate}
+
+\noindent Here's an example of how to use u-substitution to evaluate an 
+indefinite integral:
+
+\begin{framed}
+\begin{align*}
+  \int 2x \sqrt{x^2+5} \, dx\\
+  u &= x^2+5\\
+  du &= 2x \, dx\\
+  &= \int \sqrt{u} \, du\\
+  &= \int (u)^{\frac{1}{2}} \, du\\
+  &= \frac{u^{\frac{3}{2}}}{\frac{3}{2}} + C\\
+  &= \frac{2}{3} u^{\frac{3}{2}} + C\\
+  &= \frac{2}{3} (x^2+5)^{\frac{3}{2}} + C
+\end{align*}
+\end{framed}
+
+\noindent Another Example:
+
+\begin{framed}
+\begin{align*}
+  \int x^2 \, e^{x^3} \, dx\\
+  u &= x^3\\
+  u' &= 3x^2\\
+  &= \int \textcolor{red}{3\left(\frac{1}{3}\right)} \, x^2 \, e^{x^3} \, dx\\
+  &\textcolor{red}{= \frac{1}{3} \int 3x^2 \, e^{x^3} \, dx}\\
+  du &= 3x^2 \, dx\\
+  &= \frac{1}{3} \int e^u \, du\\
+  &= \frac{1}{3} e^u + C\\
+  &= \frac{1}{3} e^{x^3} + C
+\end{align*}
+\end{framed}
+
+\newpage
+
+% !
+\section{U-Substitution with Logs}
+\noindent When using logs, the substitution is typically made with the variable 
+$u = \ln(x)$. This is because the derivative of $\ln(x)$ is $\frac{1}{x}$, which 
+makes it easy to integrate when the function contains $x$ in the denominator. 
+By making this substitution, the integral can be rewritten in terms of $u$, 
+making it easier to evaluate.\\
+
+\noindent It's important to remember that when making a substitution with logs, 
+you need to change the limits of integration as well, and you need to take the 
+absolute value of u when evaluating the integral.\\
+
+\noindent For example:
+
+\begin{framed}
+\begin{align*}
+  \int_{e^2}^{e^3} \frac{\ln x}{x} \, dx\\
+  &= \int_{e^2}^{e^3} \ln x \cdot \frac{1}{x} \, dx\\
+  u &= \ln x\\
+  u' &= \frac{1}{x}\\
+  du &= \frac{1}{x} \, dx\\
+  &= \int_{u(e^2)}^{u(e^3)} u \, du\\\\
+  u(e^3) &= ln(e^3) = 3\\
+  u(e^2) &= ln(e^2) = 2\\\\
+  \int_{2}^{3} u \, du &= \frac{u^2}{2} \biggr\rvert_{2}^{3}\\
+  &= \frac{(3)^2}{2} - \frac{(2)^2}{2}\\
+  &= \frac{9}{2} - \frac{4}{2}\\
+  &= \frac{5}{2}
+\end{align*}
+\end{framed}
+
+
+\newpage
+
+% !
+\section{U-Substitution with Inverse Trig}
+\noindent u-substitution can also be used to evaluate integrals involving 
+inverse trigonometric functions. Here's an example:
+
+\begin{framed}
+  \begin{align*}
+    \int \frac{1}{4+x^2} \, dx\\
+    &= \int \frac{1}{4\left(1+\frac{x^2}{4}\right)} \, dx\\
+    &= \frac{1}{4} \int \frac{1}{1 + \left(\frac{x}{2}\right)^2} \, dx\\\\
+    u&=\frac{x}{2}\\
+    u'&=\frac{1}{2}\\\\
+    &= \frac{1}{4} \textcolor{red}{(\cdot 2)} \int 
+    \textcolor{red}{\left(\frac{1}{2}\right) \cdot }\frac{1}{1 
+    + \left(\frac{x}{2}\right)^2} \, dx\\\\
+    du &= \frac{1}{2} \, dx\\
+    &= \frac{1}{2} \int \frac{1}{1+u^2} \, du\\
+    &= \frac{1}{2} \operatorname{arctan} (u) + C\\
+    &= \frac{1}{2} \operatorname{arctan} \left(\frac{x}{2}\right) + C
+    \end{align*}
+\end{framed}
+
+% !
+\section{Area Between Curves}
+In Calculus 2, the area between two curves refers to the region enclosed by two 
+functions and the x-axis on a coordinate plane. The area between the curves can 
+be found by subtracting the area under one function (the "bottom" function) from 
+the area under the other function (the "top" function).\\
+
+One way to find the area between the curves is by using definite integrals. The 
+definite integral of a function gives the signed area under the curve of that 
+function. The definite integral of a function over an interval [a, b] gives the 
+signed area between the curve of that function and the x-axis over that 
+interval. To find the area between two curves, we can find the definite integral 
+of each function over the same interval, and then subtract the definite integral 
+of the "bottom" function from the definite integral of the "top" function.\\
+
+For example, if we have two functions f(x) and g(x), and we want to find the 
+area between the curves for the interval [a, b], we can use the following 
+formula: Area = $\int_{a}^{b}$ [f(x) - g(x)] dx\\
+
+It is important to keep in mind that the definite integral gives the signed 
+area, so if the "top" function is below the "bottom" function over the interval, 
+the area between the curves will be negative.\\
+
+Another way to find the area between the curves is by using Riemann Sums, which 
+is a method that approximates the area between the curves by dividing the 
+interval into smaller subintervals, and computing the area of rectangles with 
+heights at the points of the function at the right endpoint of each subinterval.\\
+
+It is important to note that when finding the area between curves, it is 
+important to check the function and make sure that the area we are trying to 
+find is the area between the curves and not the area of one of the functions.\\
+
+In some cases, the area between the curves might not be continuous, in those 
+cases we will have to split the region into smaller regions and find the area 
+for each of them separately.\\
+
+\begin{framed}
+  \begin{align*}
+    \text{Area} &= \int_{left}^{right} (\text{top} - \text{bottom}) \, dx\\\\
+    \text{Area} &= \int_{bottom}^{top} (\text{right} - \text{left}) \, dy
+  \end{align*}
+\end{framed}
+
+
+% !
+\section{Volume by Slicing}
+
+\begin{framed}
+  \noindent \textbf{Disks}
+  \begin{align*}
+    \text{x-axis} &= \int_a^b \pi [f(x)]^2 \, dx\\\\
+    \text{y-axis} &= \int_c^d \pi [f(y)]^2 \, dy
+  \end{align*}
+\end{framed}
+
+\begin{framed}
+  \noindent \textbf{Washers}
+  \begin{align*}
+    \text{x-axis} &= \int_a^b \pi [f(x)]^2 - \pi [g(x)]^2 \, dx\\
+    \text{When } y=-k, \; &= \int_a^b \pi [k+f(x)]^2 - \pi [k+g(x)]^2 \, dx\\
+    \text{When } y=k, \; &= \int_a^b \pi [k-f(x)]^2 - \pi [k-g(x)]^2 \, dx\\\\\\
+    \text{y-axis} &= \int_c^d \pi [f(y)]^2 - \pi [g(y)]^2 \, dy\\
+    \text{When } x=-k, \; &= \int_c^d \pi [k+f(y)]^2 - \pi [k+g(y)]^2 \, dy\\
+    \text{When } x=k, \; &= \int_c^d \pi [k-f(y)]^2 - \pi [k-g(y)]^2 \, dy
+  \end{align*}
+\end{framed}
+
+
+% !
+\section{Volume of Revolution By Cylindrical Shells}
+
+\begin{equation*}
+  \int \text{\textcolor{cyan}{circumference}} \;
+       \text{\textcolor{teal}{height}} \;
+       \text{\textcolor{orange}{width}}
+\end{equation*}
+
+\begin{framed}
+  \noindent \textbf{Shells}
+  \begin{align*}
+    \text{x-axis} &= \int_c^d \textcolor{cyan}{2\pi y} \,
+    \textcolor{teal}{[f(y)-g(y)]} \, \textcolor{orange}{dy}\\
+    \text{When } y=-k, \; &= \int_c^d \textcolor{cyan}{2\pi (y+k)} \,
+    \textcolor{teal}{[f(y)-g(y)]} \, \textcolor{orange}{dy}\\
+    \text{When } y=k, \; &= \int_c^d \textcolor{cyan}{2\pi (k-y)} \,
+    \textcolor{teal}{[f(y)-g(y)]} \, \textcolor{orange}{dy}\\\\\\
+    \text{y-axis} &= \int_a^b \textcolor{cyan}{2\pi x} \,
+    \textcolor{teal}{[f(x)-g(x)]} \, \textcolor{orange}{dx}\\
+    \text{When } x=-k, \; &= \int_a^b \textcolor{cyan}{2\pi (x+k)} \,
+    \textcolor{teal}{[f(x)-g(x)]} \, \textcolor{orange}{dx}\\
+    \text{When } x=k, \; &= \int_a^b \textcolor{cyan}{2\pi (k-x)} \,
+    \textcolor{teal}{[f(x)-g(x)]} \, \textcolor{orange}{dx}
+  \end{align*}
+\end{framed}
