@@ -291,7 +291,8 @@ use a simple rearrangement of terms, to make using the power rule easier.
 \begin{center}
 \begin{tabular}{|c|c|c|}
   \hline
-  \textbf{Functions} & \textbf{Derivative} & \textbf{Derivative with g(x) argument} \\
+  \textbf{Functions} & \textbf{Derivative} & \textbf{Derivative with g(x) 
+  argument} \\
   \hline
   $y = e^x$ & $y'=e^x$ & $y' = e^{g(x)}g'(x)$ \\
   \hline
@@ -308,7 +309,8 @@ use a simple rearrangement of terms, to make using the power rule easier.
 \begin{center}
 \begin{tabular}{|c|c|c|}
   \hline
-  \textbf{Functions} & \textbf{Derivative} & \textbf{Derivative with g(x) argument} \\
+  \textbf{Functions} & \textbf{Derivative} & \textbf{Derivative with g(x) 
+  argument} \\
   \hline
   $y = \log_ax$ & $y'= \frac{1}{x \ln a}$ & $y' = \frac{1}{g(x)\ln a} g'(x)$ \\
   \hline
@@ -321,7 +323,9 @@ use a simple rearrangement of terms, to make using the power rule easier.
 % !
 \section{The Chain Rule}
 
-The chain rule is a fundamental concept in calculus that allows us to find the derivative of a composite function. It states that if $y = f(u)$ and $u = g(x)$, then the derivative of $y$ with respect to $x$ is given by:
+The chain rule is a fundamental concept in calculus that allows us to find the 
+derivative of a composite function. It states that if $y = f(u)$ and $u = g(x)$, 
+then the derivative of $y$ with respect to $x$ is given by:
 
 \begin{equation}
 \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
@@ -329,14 +333,18 @@ The chain rule is a fundamental concept in calculus that allows us to find the d
 
 This can be written more compactly as $dy/dx = dy/du \cdot du/dx$.
 
-The chain rule is extremely useful in solving problems involving composite functions. For example, consider the function $y = (3x^2 + 4x)^5$. To find the derivative of this function, we can first find the derivative of the inner function $u = 3x^2 + 4x$:
+The chain rule is extremely useful in solving problems involving composite 
+functions. For example, consider the function $y = (3x^2 + 4x)^5$. To find the 
+derivative of this function, we can first find the derivative of the inner 
+function $u = 3x^2 + 4x$:
 
 \begin{align*}
 \frac{du}{dx} &= 6x + 4 \\
 \Rightarrow dy/du &= (3x^2 + 4x)^4 \\
 \end{align*}
 
-Next, we can use the chain rule to find the derivative of the outer function $y$ with respect to $x$:
+Next, we can use the chain rule to find the derivative of the outer function 
+$y$ with respect to $x$:
 
 \begin{align*}
   \frac{dy}{dx} &= \frac{dy}{du} \cdot \frac{du}{dx} \\
@@ -344,16 +352,21 @@ Next, we can use the chain rule to find the derivative of the outer function $y$
   &= 5(3x^2 + 4x)^4(6x + 4)
   \end{align*}
   
-  We can also use chain rule to find the derivative of multi variable function, for example 
+  We can also use chain rule to find the derivative of multi variable function, 
+  for example 
   
   $F(x,y) = x^2*sin(y)$, if we want to find $\frac{\partial F}{\partial x}$
   
   \begin{align*}
-  \frac{\partial F}{\partial x} &= \frac{\partial F}{\partial x}\frac{\partial x}{\partial x} + \frac{\partial F}{\partial y}\frac{\partial y}{\partial x}\\
+  \frac{\partial F}{\partial x} &= \frac{\partial F}{\partial x}\frac{
+    \partial x}{\partial x} + \frac{\partial F}{\partial y}\frac{\partial y}
+    {\partial x}\\
   &= 2x*sin(y)
   \end{align*}
   
-  In summary, the chain rule is a powerful tool that allows us to find the derivative of composite functions by breaking them down into simpler parts. It is essential for solving many types of problems in calculus.
+  In summary, the chain rule is a powerful tool that allows us to find the 
+  derivative of composite functions by breaking them down into simpler parts. 
+  It is essential for solving many types of problems in calculus.
 
 
 % !
@@ -363,17 +376,25 @@ Next, we can use the chain rule to find the derivative of the outer function $y$
     \hline
     \textbf{Function} & \textbf{Derivative} & \textbf{With g(x) argument} \\
     \hline
-    $\arcsin{x}$ & $\frac{1}{\sqrt{1-x^2}}$ & $\frac{d}{dx}(\arcsin{g(x)}) = \frac{g'(x)}{\sqrt{1-g(x)^2}}$ \\
+    $\arcsin{x}$ & $\frac{1}{\sqrt{1-x^2}}$ & $\frac{d}{dx}(\arcsin{g(x)}) = 
+    \frac{g'(x)}{\sqrt{1-g(x)^2}}$ \\
     \hline
-    $\arccos{x}$ & $-\frac{1}{\sqrt{1-x^2}}$ & $\frac{d}{dx}(\arccos{g(x)}) = -\frac{g'(x)}{\sqrt{1-g(x)^2}}$ \\
+    $\arccos{x}$ & $-\frac{1}{\sqrt{1-x^2}}$ & $\frac{d}{dx}(\arccos{g(x)}) = 
+    -\frac{g'(x)}{\sqrt{1-g(x)^2}}$ \\
     \hline
-    $\arctan{x}$ & $\frac{1}{1+x^2}$ & $\frac{d}{dx}(\arctan{g(x)}) = \frac{g'(x)}{1+g(x)^2}$ \\
+    $\arctan{x}$ & $\frac{1}{1+x^2}$ & $\frac{d}{dx}(\arctan{g(x)}) = 
+    \frac{g'(x)}{1+g(x)^2}$ \\
     \hline
-    $\operatorname{arcsec}{x}$ & $\frac{1}{|x|\sqrt{x^2-1}}$ & $\frac{d}{dx}(\operatorname{arcsec}{g(x)}) = \frac{g'(x)}{|g(x)|\sqrt{g(x)^2-1}}$ \\
+    $\operatorname{arcsec}{x}$ & $\frac{1}{|x|\sqrt{x^2-1}}$ & 
+    $\frac{d}{dx}(\operatorname{arcsec}{g(x)}) = 
+    \frac{g'(x)}{|g(x)|\sqrt{g(x)^2-1}}$ \\
     \hline
-    $\operatorname{arccsc}{x}$ & $-\frac{1}{|x|\sqrt{x^2-1}}$ & $\frac{d}{dx}(\operatorname{arccsc}{g(x)}) = -\frac{g'(x)}{|g(x)|\sqrt{g(x)^2-1}}$ \\
+    $\operatorname{arccsc}{x}$ & $-\frac{1}{|x|\sqrt{x^2-1}}$ & 
+    $\frac{d}{dx}(\operatorname{arccsc}{g(x)}) = 
+    -\frac{g'(x)}{|g(x)|\sqrt{g(x)^2-1}}$ \\
     \hline
-    $\operatorname{arccot}{x}$ & $-\frac{1}{1+x^2}$ & $\frac{d}{dx}(\operatorname{arccot}{g(x)}) = -\frac{g'(x)}{1+g(x)^2}$ \\
+    $\operatorname{arccot}{x}$ & $-\frac{1}{1+x^2}$ & 
+    $\frac{d}{dx}(\operatorname{arccot}{g(x)}) = -\frac{g'(x)}{1+g(x)^2}$ \\
     \hline
     \end{tabular}
 \end{center}
@@ -389,15 +410,24 @@ Next, we can use the chain rule to find the derivative of the outer function $y$
 % !
 \section{Implicit Differentiation}
 
-Implicit differentiation is a method of finding the derivative of an implicit function, which is a function that is defined implicitly rather than explicitly. In other words, the dependent variable is not isolated on one side of the equation. 
+Implicit differentiation is a method of finding the derivative of an implicit 
+function, which is a function that is defined implicitly rather than explicitly. 
+In other words, the dependent variable is not isolated on one side of the 
+equation. 
 
-Given an implicit function $F(x,y) = 0$, the derivative of $y$ with respect to $x$ can be found by taking the derivative of both sides of the equation with respect to $x$, and then solving for $\frac{dy}{dx}$. The process is summarized by the following formula:
+Given an implicit function $F(x,y) = 0$, the derivative of $y$ with respect to 
+$x$ can be found by taking the derivative of both sides of the equation with 
+respect to $x$, and then solving for $\frac{dy}{dx}$. The process is summarized 
+by the following formula:
 
-$$\frac{dy}{dx} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}$$
+$$\frac{dy}{dx} = 
+-\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}$$
 
-Where $\frac{\partial F}{\partial x}$ and $\frac{\partial F}{\partial y}$ are the partial derivatives of $F$ with respect to $x$ and $y$, respectively.
+Where $\frac{\partial F}{\partial x}$ and $\frac{\partial F}{\partial y}$ are 
+the partial derivatives of $F$ with respect to $x$ and $y$, respectively.
 
-For example, consider the implicit function $x^2 + y^2 = 16$. To find $\frac{dy}{dx}$, we take the derivative of both sides with respect to $x$:
+For example, consider the implicit function $x^2 + y^2 = 16$. To find 
+$\frac{dy}{dx}$, we take the derivative of both sides with respect to $x$:
 
 $$\frac{d}{dx}(x^2 + y^2) = \frac{d}{dx}(16)$$
 
@@ -409,7 +439,9 @@ $$\frac{dy}{dx} = -\frac{2x}{2y} = -\frac{x}{y}$$
 
 Another example is the implicit function $x^3 + y^3 = 3xy$,
 
-$$\frac{dy}{dx} = -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}} = -\frac{3x^2 - 3y^2}{3y^2 - 3x^2}$$
+$$\frac{dy}{dx} 
+= -\frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}} 
+= -\frac{3x^2 - 3y^2}{3y^2 - 3x^2}$$
 
 
 % !

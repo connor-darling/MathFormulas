@@ -8,14 +8,18 @@
   \renewcommand{\arraystretch}{2}
   \begin{tabular}{p{5cm}p{7cm}}
   \toprule
-  \textbf{Differentiation Formula} & \textbf{Corresponding Integration Formula}\\ \hline
-  $\frac{d}{dx}x^n = nx^{n-1}$ & $\int \, x^n \, dx = \frac{x^{n+1}}{n+1} + C, n \neq -1$ \\ 
+  \textbf{Differentiation Formula} 
+  & \textbf{Corresponding Integration Formula}\\ \hline
+  $\frac{d}{dx}x^n = nx^{n-1}$ 
+  & $\int \, x^n \, dx = \frac{x^{n+1}}{n+1} + C, n \neq -1$ \\ 
   \hline
-  $\frac{d}{dx} \ln x = \frac{1}{x}$ & $\int \, \frac{1}{x} \, dx = \ln |x| + C$\\
+  $\frac{d}{dx} \ln x = \frac{1}{x}$ 
+  & $\int \, \frac{1}{x} \, dx = \ln |x| + C$\\
   \hline
   $\frac{d}{dx} e^x = e^x$ & $\int \, e^x \, dx = e^x + C$\\
   \hline
-  $\frac{d}{dx} a^x = (\ln a)a^x$ & $\int \, a^x \, dx = \left(\frac{1}{\ln a}\right)a^x + C$\\
+  $\frac{d}{dx} a^x = (\ln a)a^x$ 
+  & $\int \, a^x \, dx = \left(\frac{1}{\ln a}\right)a^x + C$\\
   \hline
   $\frac{d}{dx} \sin x = \cos x$ & $\int \, \cos x \, dx = \sin x + C$\\
   \hline
@@ -25,17 +29,24 @@
   \hline
   $\frac{d}{dx} \cot x = -\csc^2 x$ & $\int \, \csc^2x \, dx = -\cot x + C$\\
   \hline
-  $\frac{d}{dx} \sec x = \sec x \tan x$ & $\int \, \sec x \tan x \, dx = \sec x + C$\\
+  $\frac{d}{dx} \sec x = \sec x \tan x$ 
+  & $\int \, \sec x \tan x \, dx = \sec x + C$\\
   \hline
-  $\frac{d}{dx} \csc x = -\csc x \cot x$ & $\int \, \csc x \cot x \, dx = -\csc x + C$\\
+  $\frac{d}{dx} \csc x = -\csc x \cot x$ 
+  & $\int \, \csc x \cot x \, dx = -\csc x + C$\\
   \hline
-  $\frac{d}{dx} \arcsin x = \frac{1}{\sqrt{1-x^2}}$ & $\int \, \frac{1}{\sqrt{1-x^2}} \, dx = \arcsin x + C$\\
+  $\frac{d}{dx} \arcsin x = \frac{1}{\sqrt{1-x^2}}$ 
+  & $\int \, \frac{1}{\sqrt{1-x^2}} \, dx = \arcsin x + C$\\
   \hline
-  $\frac{d}{dx} \arccos x = -\frac{1}{\sqrt{1-x^2}}$ & $\int \, -\frac{1}{\sqrt{1-x^2}} \, dx = \arccos x + C$\\
+  $\frac{d}{dx} \arccos x = -\frac{1}{\sqrt{1-x^2}}$ 
+  & $\int \, -\frac{1}{\sqrt{1-x^2}} \, dx = \arccos x + C$\\
   \hline
-  $\frac{d}{dx} \arctan x = \frac{1}{1+x^2}$ & $\int \, \frac{1}{1+x^2} \, dx = \arctan x + C$\\
+  $\frac{d}{dx} \arctan x = \frac{1}{1+x^2}$ 
+  & $\int \, \frac{1}{1+x^2} \, dx = \arctan x + C$\\
   \hline
-  $\frac{d}{dx} \operatorname{arcsec} x = \frac{1}{|x|\sqrt{x^2-1}}$ & $\int \, \frac{1}{|x|\sqrt{x^2-1}} \, dx = \operatorname{arcsec} |x| + C$\\ \bottomrule
+  $\frac{d}{dx} \operatorname{arcsec} x = \frac{1}{|x|\sqrt{x^2-1}}$ 
+  & $\int \, \frac{1}{|x|\sqrt{x^2-1}} \, 
+  dx = \operatorname{arcsec} |x| + C$\\ \bottomrule
   \end{tabular}
   \end{table}
 
@@ -56,11 +67,15 @@ to find the total cost of producing a certain quantity of goods given the cost
 function.
 
 The process of finding an anti-derivative of a function is called integration. 
-There are several techniques for finding anti-derivatives, including integration by substitution, integration by parts, and using integration tables. It's important to note that for most functions, there is no closed-form solution for the antiderivative, in those cases numerical integration is used.
+There are several techniques for finding anti-derivatives, including integration 
+by substitution, integration by parts, and using integration tables. It's 
+important to note that for most functions, there is no closed-form solution for 
+the antiderivative, in those cases numerical integration is used.
 
 Here are some examples of finding anti-derivatives:
 
-1. The anti-derivative of $x^2$ is $\frac{x^3}{3} + C$ , where C is an arbitrary constant.\\
+1. The anti-derivative of $x^2$ is $\frac{x^3}{3} + C$ , where C is an arbitrary 
+constant.\\
 
 2. The anti-derivative of $2x$ is $x^2 + C$ \\
 
@@ -137,7 +152,8 @@ number of rectangles used approaches infinity. That is,
   3. Determine the function $f(x)$ by replacing the $x_i = i \Delta x$ with 
   an $x$.\\
 
-  \noindent In the Riemann sum, we have $f(x_i)=\left(5+\frac{3i}{n}\right)^5$.\\\\
+  \noindent In the Riemann sum, we have 
+  $f(x_i)=\left(5+\frac{3i}{n}\right)^5$.\\\\
   \noindent Since $\Delta x = \frac{3}{n}$, we know that $x_i=i\Delta x 
   = \frac{3i}{n}$. Therefore:
 
@@ -291,7 +307,8 @@ the area between the curves will be negative.\\
 Another way to find the area between the curves is by using Riemann Sums, which 
 is a method that approximates the area between the curves by dividing the 
 interval into smaller subintervals, and computing the area of rectangles with 
-heights at the points of the function at the right endpoint of each subinterval.\\
+heights at the points of the function at the right endpoint of each 
+subinterval.\\
 
 It is important to note that when finding the area between curves, it is 
 important to check the function and make sure that the area we are trying to 
