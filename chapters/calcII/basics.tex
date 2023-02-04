@@ -381,7 +381,7 @@ for each of them separately.\\
 \end{framed}
 
 \begin{framed}
-  \noindent \textbf{Washers}
+  \noindent \textbf{Washers/Donuts}
   \begin{align*}
     \text{x-axis} &= \int_a^b \pi [f(x)]^2 - \pi [g(x)]^2 \, dx\\
     \text{When } y=-k, \; &= \int_a^b \pi [k+f(x)]^2 - \pi [k+g(x)]^2 \, dx\\
@@ -398,8 +398,8 @@ for each of them separately.\\
 
 \begin{equation*}
   \int \text{\textcolor{cyan}{circumference}} \;
-       \text{\textcolor{teal}{height}} \;
-       \text{\textcolor{orange}{width}}
+       \text{\textcolor{teal}{height/width}} \;
+       \text{\textcolor{orange}{thickness}}
 \end{equation*}
 
 \begin{framed}
@@ -418,4 +418,19 @@ for each of them separately.\\
     \text{When } x=k, \; &= \int_a^b \textcolor{cyan}{2\pi (k-x)} \,
     \textcolor{teal}{[f(x)-g(x)]} \, \textcolor{orange}{dx}
   \end{align*}
+\end{framed}
+
+
+
+% !
+\section{Arc Length of a Curve}
+
+\begin{framed}
+  \begin{align*}
+    \text{Arc Length } &= \int_a^b \, \sqrt{1 + \left[f'(x)\right]^2} \; dx\\\\
+    \text{Arc Length } &= \int_c^d \, \sqrt{1 + \left[f'(y)\right]^2} \; dy\\\\\\\\
+    \text{Riemann sum version} &= \lim_{n \to \infty} \sum_{i=1}^{n} 
+    \sqrt{1 + \left[f'(x_{i}^{*})\right]^2} \; \Delta x 
+  \end{align*}
+  Where, $x \in [a, b].$ and $y \in [c, d].$
 \end{framed}
