@@ -1,0 +1,32 @@
+\section{Integration by Parts}
+
+\begin{framed}
+\begin{equation*}
+  = uv - \int u'v \, dx
+\end{equation*}
+Logs\\
+Inverse Trig\\
+Algebraic\\
+Trig\\
+Exponential\\\\
+LIATE
+\end{framed}
+
+\begin{framed}
+  Example:
+\begin{align*}
+  \int \arctan x \, dx\\
+  &= \int \arctan x \, dx\\\\
+  u &= \arctan x \; \; \; \; \; v' = 1\\
+  u' &= \frac{1}{1+x^2} \; \; \; \; \; v = x\\
+  &= uv - \int u'v \, dx\\
+  &= x \cdot \arctan x - \int \frac{1}{1+x^2} \cdot x \, dx\\\\
+  w &= 1+x^2\\
+  dw &= 2xdx\\\\
+  &= x \cdot \arctan x - \textcolor{red}{\frac{1}{2}}\int \frac{1}{1+x^2} \cdot \textcolor{red}{2} x \, dx\\
+  &= x \cdot \arctan x - \frac{1}{2} \int \frac{1}{w} \, dw\\
+  &= x \cdot \arctan x - \frac{1}{2} \left[\ln |w|\right] + C\\
+  &= x \cdot \arctan x - \frac{1}{2} \left[\ln |1+x^2|\right] + C\\
+  &= x \cdot \arctan x - \frac{1}{2} \left[\ln (1+x^2)\right] + C
+\end{align*}
+\end{framed}

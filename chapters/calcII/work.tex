@@ -20,3 +20,57 @@ For example, let's say I apply a force of 10 lbs to move an object
 Here we see that $\text{Units}=(\text{Units of Force})(\text{Units of Distance})$
 which is why we end up with $ft-lbs$. Other common units are $N-m$ which come 
 from Newton-meters
+
+\noindent The general rule of thumb when dealing with work problems involving pumps is:
+
+\begin{framed}
+  \begin{itemize} 
+    \item We will call where the work begins: $\phi$
+    \item We will call where the work ends: $\Theta$
+    \item And in most cases weight denisty is a constant, but we'll call it $\rho$
+    \item And for the volume, in most cases it involve a varying function;
+              for the sake of example we will call the cross sections circular
+  \end{itemize} 
+\begin{align*}
+  \text{Work} = \int_{\phi}^{\Theta}  \, (\text{force})\cdot(\text{distance})\\
+  &= \int_{\phi}^{\Theta} \, (\text{weight})\cdot(\text{x})\\
+  &= \int_{\phi}^{\Theta} \, (\rho)\cdot(\text{volume})\cdot(\text{x})\\
+  &= \int_{\phi}^{\Theta} \, (\rho)\cdot[\pi(r(x))^2 \,dx]\cdot(\text{x})\\
+\end{align*}
+\end{framed}
+
+Along with pump problems, are spring problems. This is typically where we 
+use \textbf{Hooke's Law} which states: 
+\noindent \underline{The force required to hold a 
+spring $x$ units from its rest position is \textbf{proportional} to the distance
+$x$.}\\
+
+\noindent In this context, proportional means ``related by a constant.''
+
+\begin{framed}
+  \begin{itemize} 
+    \item $k$ is the spring constant
+  \end{itemize} 
+\begin{align*}
+  F(x) = kx
+\end{align*}
+\end{framed}
+
+\noindent Example of hooke's law:
+
+\begin{framed}
+    \noindent Problem: It takes $5N$ of force to hold a spring $3m$ from rest.\\
+    a.) Find the spring constant $k$.\\
+    b.) Find the work required to move the spring and additional $2m$ away from
+        its rest position.
+\begin{align*}
+  F(x) = kx\\\\
+  5 &= k \cdot 3\\
+  k &= \frac{5}{3}\\
+  F(x) &= \frac{5}{3} \cdot x\\\\
+  \text{Work} &= \int_3^5 \, \frac{5}{3} \cdot x \, dx\\
+  &= \frac{5}{3} \int_3^5 \, x dx\\
+  &= . . .\\
+  &= \frac{40}{3} N \cdot m
+\end{align*}
+\end{framed}
