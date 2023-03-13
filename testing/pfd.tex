@@ -1,0 +1,47 @@
+\chapter{Testing}
+
+\begin{equation*}
+\frac{e^x}{e^{2x}-e^x}=\frac{e^x}{e^x(e^x-1)}=\frac{1}{e^x-1} - \frac{1}{e^{2x}-e^x}
+\end{equation*}
+
+To obtain this expression, we used the fact that:
+
+\begin{equation*}
+\frac{1}{e^x(e^x-1)}=\frac{1}{e^x}-\frac{1}{e^{2x}}
+\end{equation*}
+
+Now, we can use partial fraction decomposition on the two terms on the right-hand side. For the first term, we have:
+
+\begin{equation*}
+\frac{1}{e^x-1}=\frac{A}{e^x-1}
+\end{equation*}
+
+Multiplying both sides by $e^x-1$, we get:
+
+\begin{equation*}
+1 = A(e^x-1)
+\end{equation*}
+
+Solving for $A$, we get $A=1/(e^x-1)$.
+
+For the second term, we have:
+
+\begin{equation*}
+\frac{1}{e^{2x}-e^x}=\frac{B}{e^x}-\frac{B}{e^{2x}}
+\end{equation*}
+
+Multiplying both sides by $e^{2x}$, we get:
+
+\begin{equation*}
+1 = B(e^x - 1)
+\end{equation*}
+
+Solving for $B$, we get $B=1/(e^x-1)$.
+
+Therefore, we have:
+
+\begin{equation*}
+\frac{e^x}{e^{2x}-e^x}=\frac{1}{e^x-1} - \frac{1}{e^{2x}-e^x}=\frac{1}{e^x-1} - \frac{1}{e^x} + \frac{1}{e^{2x}}
+\end{equation*}
+
+
